@@ -121,7 +121,7 @@ def check_fingerprint(text):
     invisible = sum(1 for c in text if unicodedata.category(c) == "Cf")
     em = text.count("—")
     en = len(re.findall(r"\s–\s", text))
-    curly = sum(text.count(c) for c in "‘’“”")
+    curly = sum(text.count(c) for c in "‘’”")   # „ und “ sind deutsch, bleiben
     ellip = text.count("…")
     nbsp = sum(text.count(c) for c in "\u00a0\u202f\u2009")
     total = invisible * 4 + em * 2 + en * 2 + curly + ellip + nbsp
