@@ -38,12 +38,16 @@ Ergebnis „von Hand bewertet“ schreiben.
 2. `hooks.json` in diesem Ordner lesen. 26 Formeln, jede mit Vorlage,
    Beispiel aus dem Studio, Bild-Version, Einsatzzweck und der Art, wie sie
    kaputtgeht.
-3. `../ig-start/nicht-versprechen.md` lesen. Kein Skript verlässt diesen
+3. `hook-regeln.md` in diesem Ordner lesen: emotional statt technisch, der
+   Gegenstand steht im Hook, die vier Fehler (Verzögerung, Verwirrung, keine
+   Relevanz, keine Ausrichtung). Ein Hook über das Studio statt über die
+   Zuschauerin ist der häufigste Grund, warum Studio-Reels floppen.
+4. `../ig-start/nicht-versprechen.md` lesen. Kein Skript verlässt diesen
    Skill mit „für immer“, „garantiert“, „schmerzfrei“ oder einer Heilung.
-4. Wenn die Idee dünn ist, nicht auffüllen. Eine gebündelte Frage stellen: Was
+5. Wenn die Idee dünn ist, nicht auffüllen. Eine gebündelte Frage stellen: Was
    ist passiert, wem, und was hat es gekostet oder gebracht? Ein Reel braucht
    eine konkrete wahre Sache. Die holen, bevor geschrieben wird.
-5. Liegt `ideen.md` im Arbeitsordner, lesen. `/ig-viral` schreibt sie, und sie
+6. Liegt `ideen.md` im Arbeitsordner, lesen. `/ig-viral` schreibt sie, und sie
    ist der eigene Beleg der Nutzerin, welche Formeln in ihrer Nische gerade
    laufen. Sie schlägt die Standardwerte in dieser Datei.
 

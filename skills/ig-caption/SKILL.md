@@ -99,6 +99,12 @@ python3 <skill-ordner>/caption.py entwurf.txt --keywords "dauerhafte haarentfern
   Bio oder in die DM.
 - **Eine Aufforderung.** Zwei Aufforderungen sind so viel wie keine.
   `caption.py` zählt sie.
+- **Keine erfundene Aufforderung.** Die Aufforderung der Caption ist die
+  aus dem Video. Hat das Video keine (kein Stichwort, kein „speicher dir
+  das“), keine erfinden, kein „schreib mir X in die DMs“, das ins Leere
+  führt. Stattdessen eine **offene Frage zum Thema**, die zum Kommentieren
+  einlädt: „Wie lange hast du gewachst, bevor du umgestiegen bist?“ Echte
+  Kommentare sind mehr wert als ein Trichter ohne Grund.
 - **Das Stichwort muss tippbar sein.** Ein Wort, keine Leerzeichen, kein
   Emoji, und im Video auch laut gesagt. `Schreib ZWEIFEL in die Kommentare`
   funktioniert. `Schreib „den Zettel für zwischendurch“` nicht.

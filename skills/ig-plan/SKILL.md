@@ -30,8 +30,9 @@ eine Frage, die dreimal kam, ein Fehler, ein Gerät, das gestreikt hat, ein
 Ergebnis, eine Absage, ein Preisgespräch. Fünf Minuten erzählen lassen, nicht
 unterbrechen. Jeder Satz darin ist ein möglicher Beitrag.
 
-Wenn gar nichts kommt: die drei häufigsten Kundinnen-Fragen aus dem
-Studio-Profil nehmen. Die gehen immer.
+Wenn gar nichts kommt: `ideen-vorrat.md` in diesem Ordner lesen. Zuerst
+die Ideen aus dem Studio-Profil (Kundinnen-Fragen, Haltungen, Befürchtungen,
+Preise), die gehen immer. Höchstens ein Format aus dem Vorrat pro Woche.
 
 ## Was gepostet wird
 

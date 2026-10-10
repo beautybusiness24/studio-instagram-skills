@@ -22,6 +22,15 @@ Termine.
 `studio-profil.md` lesen; fehlt sie, `/ig-start` vorschlagen.
 `../ig-start/nicht-versprechen.md` gilt auch für Stories.
 
+## Zwei Arten von Story-Tagen
+
+- **Ein einzelner Tag:** die tägliche Form unten.
+- **Die Nutzerin will Termine:** die **Story-Treppe** aus `story-treppe.md` in
+  diesem Ordner. Fünf Tage, vier geben, einer einladen, verkauft wird genau
+  einmal. Immer vorschlagen, wenn „Termine“, „Kalender leer“, „verkaufen“
+  oder „freie Plätze“ fällt. Die Umfrage für Tag 2 aus den Befürchtungen im
+  Studio-Profil bauen, Tag 4 zitiert das Ergebnis wörtlich.
+
 ## Die tägliche Form
 
 Drei bis sieben Bilder am Tag. Ab etwa sieben steigt die Weitertipp-Rate, und
