@@ -14,6 +14,25 @@ Die einzige ehrliche Quelle dafür, was für einen Account funktioniert, ist
 dieser Account. Jede Regel in jedem Instagram-Ratgeber, auch die in diesem
 Paket, ist eine Annahme. Die letzten 30 Beiträge der Nutzerin sind der Beleg.
 
+## Mit Zernio: echte Zahlen statt Screenshots
+
+Ist Zernio verbunden (`/ig-verbinden`), die Zahlen selbst holen, statt nach
+Screenshots zu fragen: die letzten 30 Beiträge mit `analytics_get_analytics`
+(Aufrufe, Reichweite, Likes, Kommentare, Speicherungen, Teilen, bei Reels
+mittlere Wiedergabezeit) und den Follower-Verlauf mit
+`accounts_get_follower_stats`. Beiträge jünger als 24 Stunden weglassen, deren
+Zahlen sind noch unvollständig. Den Anteil Nicht-Follower und das Halten bei 3
+Sekunden liefert die Schnittstelle nicht immer; fehlt es, nach Vielfachem,
+Wiedergabezeit und Teilen je Reichweite ordnen und das sagen.
+
+Ohne Zernio: Screenshots der Insights einfügen lassen, wie unten beschrieben.
+
+Was dabei herauskommt, in einfachen Worten zusammenfassen: welche drei Reels
+am besten liefen und warum, welche drei am schlechtesten und warum, eine Sache
+zum Aufhören, eine Sache für mehr davon. Diese Erkenntnis in `lernen.md` unter
+„Regeln“ eintragen, damit `/ig-plan` und `/ig-reel` sie nutzen.
+
+
 ## Eingabe
 
 Nach dem fragen, was die Nutzerin hat:

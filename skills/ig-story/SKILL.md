@@ -118,3 +118,10 @@ Danach: Jede, die mit Ja stimmt, bekommt eine Antwort. Das ist der ganze Weg.
 
 Bei „ja“ in `stories/JJJJ-MM-TT.md` speichern. Nichts wird gepostet. Die
 Nutzerin postet es.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

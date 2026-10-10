@@ -1,7 +1,7 @@
 {
   "name": "bb24-instagram",
-  "description": "14 Claude-Skills für den Instagram-Account eines Kosmetikstudios, auf Deutsch. /ig-start legt im Interview das Studio-Profil an. /ig-reel schreibt Reels aus 26 Hook-Formeln mit bewertetem Hook und Zeitplan pro Satz. /ig-viral sammelt, was in der Nische gerade funktioniert. /ig-caption prüft die Caption gegen die Kürzung im Feed. /ig-plan legt die Woche fest. Dazu Profil-Check, Karussell, Story, Kommentare, Antworten, DMs, Wiederverwertung und ein Humanizer. Nichts wird gepostet, das machst du selbst.",
-  "version": "1.1.0",
+  "description": "17 Claude-Skills für den Instagram-Account eines Kosmetikstudios, auf Deutsch. /ig-start legt im Interview das Studio-Profil an. /ig-reel schreibt Reels aus 26 Hook-Formeln mit bewertetem Hook und Zeitplan pro Satz. /ig-viral sammelt, was in der Nische gerade funktioniert. /ig-caption prüft die Caption gegen die Kürzung im Feed. /ig-plan legt die Woche fest. Dazu Profil-Check, Karussell, Story, Kommentare, Antworten, DMs, Wiederverwertung und ein Humanizer. Nichts wird gepostet, das machst du selbst.",
+  "version": "1.2.0",
   "author": {
     "name": "Beauty Business 24",
     "url": "https://beautybusiness24.com"

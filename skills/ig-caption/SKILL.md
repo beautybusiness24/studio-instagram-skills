@@ -143,3 +143,10 @@ Prüfung:    FERTIG
    damit beides zusammen liegt.
 
 Nichts wird gepostet. Die Nutzerin kopiert es.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

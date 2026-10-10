@@ -1,6 +1,6 @@
 # Instagram-Skills für Kosmetikstudios
 
-14 Claude-Skills, die den Instagram-Account eines Kosmetikstudios führen. Auf
+17 Claude-Skills, die den Instagram-Account eines Kosmetikstudios führen. Auf
 Deutsch, mit Beispielen aus dem Studioalltag. Kostenlos, MIT-Lizenz, keine
 Anmeldung, kein Schlüssel, nichts zu verbinden.
 
@@ -42,12 +42,15 @@ Dann einen Ordner **Instagram-Studio** auf dem Schreibtisch anlegen, in Claude
 öffnen, und `/ig-start` eingeben. Das Gespräch dauert zehn Minuten und legt
 `studio-profil.md` an. Jeder Skill liest diese Datei.
 
-## Die vierzehn
+## Die siebzehn
 
 | Befehl | was er macht |
 | --- | --- |
-| `/ig-start` | Legt im Gespräch dein Studio-Profil an und die Ordner, in denen alles gespeichert wird. Der erste Befehl. |
-| `/ig-reel` | Eine Idee wird ein Reel. Drei Hooks aus [26 Formeln](skills/ig-reel/hooks.json), bewertet, dann das Skript, der Text im Bild und ein Zeitplan pro Satz. |
+| `/ig-start` | Legt im Gespräch dein Studio-Profil an, recherchiert auf Wunsch zu deinen Behandlungen und richtet die Ordner ein. Der erste Befehl. |
+| `/ig-ideen` | Recherchiert, was Frauen zu deiner Behandlung fragen und befürchten, und macht daraus 15 Reel-Ideen mit fertigen Hooks. |
+| `/ig-verbinden` | Verbindet Instagram über Zernio (2 Konten kostenlos) mit Claude, Schritt für Schritt. Danach arbeiten die anderen Befehle mit echten Daten. |
+| `/ig-posten` | Plant ein fertiges Reel mit Caption und Cover über Zernio ein, erst nach deinem Ja. |
+| `/ig-reel` | Eine Idee wird ein Reel. Drei Hooks aus [26 Formeln](skills/ig-reel/hooks.json), bewertet, dann Skript, Text im Bild, Drehplan, Hook-Karte und Caption. Gespeichert wird erst nach deinem Ja. |
 | `/ig-viral` | Sieht nach, was in deiner Nische läuft, ordnet nach dem Vielfachen über dem Normalwert jedes Accounts, benennt die Formel, schreibt die Ideen-Datei. |
 | `/ig-caption` | Die Caption: die Zeile vor dem „... mehr“, die eine Aufforderung, die Suchbegriffe, bis zu fünf Hashtags. Geprüft. |
 | `/ig-plan` | Die Woche: was, welches Format, wann, mit wem du dich austauschst. |
@@ -67,7 +70,10 @@ Im Ordner, den du in Claude geöffnet hast. Keine versteckten Ordner.
 
 ```
 studio-profil.md    wer du bist, was du anbietest, wie du sprichst
-ideen.md            was in deiner Nische gerade funktioniert
+recherche.md        was Frauen im Netz zu deinen Behandlungen fragen
+ideen.md            deine Ideen-Liste für Reels
+viral.md            was in deiner Nische gerade funktioniert
+lernen.md           was Claude über deinen Geschmack gelernt hat
 wochenplan.md       was diese Woche gepostet wird
 log.md              was schon gepostet wurde, mit Hook-Formel
 reels/              ein Skript je Datei, mit Caption

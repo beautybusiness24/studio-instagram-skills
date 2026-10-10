@@ -17,6 +17,22 @@ einem Reel aus, und er hat etwa drei Sekunden, um eine Frage zu beantworten:
 Gibt es hier mehr davon, und ist das für mich? Bei einem Studio kommt eine
 zweite Frage dazu: Ist das in meiner Nähe?
 
+## Was dieser Skill sehen kann
+
+Die Felder des Profils (Namensfeld, Bio, Link, Highlights, angepinnte
+Beiträge, Raster) gibt keine Schnittstelle vollständig heraus. Deshalb immer:
+**Screenshot vom oberen Teil des Profils und den ersten zwei Raster-Reihen.**
+Ist Zernio verbunden, zusätzlich die Punkte „Aktivität“ (wann zuletzt
+gepostet) und „Antworten auf Kommentare“ mit echten Daten prüfen
+(`posts_list`, `comments_list_inbox_comments`) und Follower-Zahl mit
+`accounts_get_follower_stats`.
+
+Die volle Punktzahl erreicht ein Profil nicht durch Umschreiben allein: Drei
+Punkte hängen an Beiträgen, die es noch nicht gibt (angepinnte Drei,
+regelmäßige Aktivität, Story-Präsenz). Das ehrlich sagen und als Aufgaben in
+den nächsten `/ig-plan` geben, statt die Punkte zu versprechen.
+
+
 ## Eingabe
 
 Die Nutzerin bitten, einzufügen oder als Screenshot zu schicken: das
@@ -100,3 +116,10 @@ Raster, eine Story-Gewohnheit und ein angepinnter Beitrag, der noch nicht
 existiert. Nichts davon ist eine Neufassung.
 
 Nichts wird bei Instagram gespeichert. Die Nutzerin ändert jedes Feld selbst.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

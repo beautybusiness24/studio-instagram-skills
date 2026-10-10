@@ -19,7 +19,7 @@ Saison.
 Ein Werkzeug liegt in diesem Ordner und läuft:
 
 ```bash
-python3 <skill-ordner>/swipe.py gesammelt.tsv --out ideen.md
+python3 <skill-ordner>/swipe.py gesammelt.tsv --out viral.md
 ```
 
 `<skill-ordner>` ist der Ordner dieses Skills, der Pfad steht oben beim Laden.
@@ -61,6 +61,19 @@ schnellste und passendste Sammlung, die es gibt, und sie ist schon nach dem
 Geschmack der Nutzerin gefiltert.
 
 ## Schritt 2: Hinschauen
+
+**Was Claude aus einem Link lesen kann:** meist nichts. Instagram zeigt Reels
+ohne Anmeldung kaum her, und Claude kann den Ton eines Videos nicht hören.
+Deshalb nicht nur Links schicken lassen, sondern pro Reel:
+
+1. **Screenshot vom ersten Bild** (darauf steht meist der Hook als Text),
+2. **den ersten gesprochenen Satz**, abgetippt,
+3. **die Aufrufe dieses Reels** und **ungefähr die normalen Aufrufe** des
+   Accounts (im Profil durch das Reels-Raster scrollen und den mittleren Wert
+   schätzen).
+
+Schickt die Nutzerin nur Links, freundlich genau das erklären und nach diesen
+drei Dingen fragen. Mit Screenshots den Hook im Bild selbst ablesen.
 
 **Der einfache Weg, den die meisten nehmen:** Die Nutzerin fügt 5 bis 15
 Reel-Links oder Captions ein, die ihr aufgefallen sind, und schreibt zu jedem
@@ -135,7 +148,7 @@ account	follower	median	aufrufe	hook
 ```
 
 ```bash
-python3 <skill-ordner>/swipe.py gesammelt.tsv --out ideen.md
+python3 <skill-ordner>/swipe.py gesammelt.tsv --out viral.md
 ```
 
 Es berechnet das Vielfache, benennt die Hook-Formel mit denselben 26 Formeln,
@@ -195,10 +208,17 @@ DEINE FASSUNG
   ...
 ```
 
-Die Ideen-Datei nach `ideen.md` im Arbeitsordner schreiben. `/ig-reel` und
+Das Ergebnis nach `viral.md` im Arbeitsordner schreiben, die drei eigenen Fassungen zusätzlich als offene Ideen in `ideen.md` anhängen. `/ig-reel` und
 `/ig-plan` lesen sie beide, und das ist der Punkt: Sobald das einmal gelaufen
 ist, arbeitet der Rest des Pakets mit den eigenen Belegen der Nutzerin statt
 mit Standardwerten.
 
 Dieser Skill postet nichts, folgt niemandem, liket nichts und schreibt
 niemanden an. Er liest.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

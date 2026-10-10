@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "bb24-instagram",
-      "description": "14 Claude-Skills, die den Instagram-Account eines Kosmetikstudios führen: Studio-Profil im Interview anlegen, Reels aus 26 Hook-Formeln mit Bewertung, Ideen aus der eigenen Nische, Caption-Prüfung, Wochenplan, Profil-Check, Karussell, Story, Kommentare, Antworten, DMs, Wiederverwertung und ein Humanizer.",
+      "description": "17 Claude-Skills, die den Instagram-Account eines Kosmetikstudios führen: Studio-Profil im Interview anlegen, Reels aus 26 Hook-Formeln mit Bewertung, Ideen aus der eigenen Nische, Caption-Prüfung, Wochenplan, Profil-Check, Karussell, Story, Kommentare, Antworten, DMs, Wiederverwertung und ein Humanizer.",
       "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/beautybusiness24/studio-instagram-skills"

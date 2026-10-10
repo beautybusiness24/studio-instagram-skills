@@ -16,6 +16,22 @@ Interesse ein Termin wird, und sie sind auch die Stelle, an der die meisten
 Accounts das Vertrauen verspielen, das ihre Beiträge aufgebaut haben. Der
 Unterschied liegt ganz darin, wer sich zuerst bewegt hat.
 
+## Mit Zernio: Nachrichten lesen und beantworten
+
+Ohne Verbindung schreibt dieser Skill nur Text, den die Nutzerin selbst in
+Instagram einfügt. Ist Zernio verbunden (`/ig-verbinden`), kann er die
+Instagram-Nachrichten lesen und Antworten senden: offene Gespräche abrufen
+(Werkzeug über `search_tools` mit „inbox conversations“ bzw. „messages“
+finden), die ungelesenen zeigen, Antworten nach den Regeln unten entwerfen.
+
+- **Jede Nachricht vor dem Senden zeigen und einzeln bestätigen lassen.**
+- Instagram erlaubt Antworten nur innerhalb von **24 Stunden** nach der
+  letzten Nachricht der Kundin. Ist das Fenster zu, sagen, dass sie in der App
+  antworten muss.
+- **Nur Leuten schreiben, die zuerst geschrieben haben** (Stichwort,
+  Story-Antwort, Anfrage). Keine Erstkontakte über Zernio.
+
+
 `studio-profil.md` lesen: Stimme, Du oder Sie, Stichwort, was es liefert,
 wie man bucht. `../ig-start/nicht-versprechen.md` gilt auch in DMs, gerade
 bei Fragen nach Schmerz und Ergebnis.
@@ -150,3 +166,10 @@ Die Nachricht, die Zeichenzahl, und die zwei Nachfass-Nachrichten mit dem
 Tag, an dem jede rausgeht, alle durch `/ig-human`. Die Nutzerin schickt jede
 davon selbst, oder über ihre eigene zugelassene Automatisierung nur für
 Stichwort-Antworten.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

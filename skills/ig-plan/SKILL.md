@@ -1,116 +1,126 @@
 ---
 name: ig-plan
 description: >-
-  Baut die Instagram-Woche eines Kosmetikstudios: was gepostet wird, in
-  welchem Format, wann, und mit wem man sich austauscht. Nutzen, wenn die
-  Nutzerin sagt "plane meine Woche", "was soll ich posten", "Content-Plan",
-  "Wochenplan", "ich habe keine Ideen", oder einen Posting-Plan und eine
-  Liste zum Kommentieren will.
+  Plant die Instagram-Woche eines Kosmetikstudios: welche Reels an welchem Tag,
+  welche Stories, mit fertigen Hooks. Claude bringt selbst Ideen mit (aus
+  Studio-Profil, Recherche, Ideen-Liste und dem, was gelernt wurde), fragt nach
+  Neuem aus dem Studio, und die Nutzerin bestätigt oder ändert jeden Platz.
+  Nutzen, wenn die Nutzerin sagt "plane meine Woche", "was soll ich posten",
+  "Content-Plan", "Wochenplan", "ich habe keine Ideen".
 ---
 
 # ig-plan
 
-Die Schaltzentrale. Alles andere in diesem Paket führt aus; das hier
-entscheidet, was ausgeführt wird. Einmal pro Woche laufen lassen, am selben
-Tag. Für ein Studio ist Sonntagabend oder Montag früh meistens richtig, vor
-der ersten Kundin.
+Die Schaltzentrale. Einmal pro Woche, am selben Tag, zum Beispiel Sonntagabend
+oder Montag früh vor der ersten Kundin. Die Nutzerin muss nicht kreativ sein:
+Claude bringt die Ideen mit, sie entscheidet.
 
 ## Eingabe
 
-Liegen `studio-profil.md`, `ideen.md` und `log.md` im Arbeitsordner, alle
-drei lesen. Die Ideen-Datei ist der eigene Beleg der Nutzerin aus `/ig-viral`,
-welche Formeln in ihrer Nische gerade landen, und sie schlägt alles in dieser
-Datei. Das Log verhindert, dass der Plan ein Thema aus den letzten zwei
-Wochen wiederholt. Fehlt `studio-profil.md`, `/ig-start` vorschlagen.
+Lesen, falls vorhanden: `studio-profil.md`, `recherche.md`, `ideen.md`,
+`viral.md`, `lernen.md`, `log.md`, den letzten `wochenplan.md`. Fehlt
+`studio-profil.md`, `/ig-start` vorschlagen.
 
-Dann nach genau einer Sache fragen, denn aus ihr kommen die Beiträge:
+Dann zwei kurze Fragen, mit Beispielen, damit sie weiß, was gemeint ist:
 
-**Was ist diese Woche im Studio passiert?** Eine Kundin, die etwas gesagt hat,
-eine Frage, die dreimal kam, ein Fehler, ein Gerät, das gestreikt hat, ein
-Ergebnis, eine Absage, ein Preisgespräch. Fünf Minuten erzählen lassen, nicht
-unterbrechen. Jeder Satz darin ist ein möglicher Beitrag.
+> **1. Gab es diese Woche etwas im Studio, das du erzählen möchtest?**
+> Zum Beispiel: eine Frage, die mehrmals kam, eine Kundin mit einem schönen
+> Ergebnis, ein Missverständnis, etwas Neues im Studio. Du kannst es einfach
+> reinsprechen oder tippen. Wenn nichts war, sag „nichts“, ich habe Ideen.
+>
+> **2. Gibt es ein Ziel für die Woche?**
+> Zum Beispiel: freie Termine füllen, eine Behandlung bekannter machen, mehr
+> Follower aus deinem Stadtteil. Oder einfach: „regelmäßig posten“.
 
-Wenn gar nichts kommt: `ideen-vorrat.md` in diesem Ordner lesen. Zuerst
-die Ideen aus dem Studio-Profil (Kundinnen-Fragen, Haltungen, Befürchtungen,
-Preise), die gehen immer. Höchstens ein Format aus dem Vorrat pro Woche.
+Aus dem, was sie erzählt, werden Plätze. Den Rest füllt Claude selbst, in
+dieser Reihenfolge:
+1. offene Ideen aus `ideen.md` (Status `offen`)
+2. Kundinnen-Fragen, Haltungen und Befürchtungen aus `studio-profil.md`
+3. Fragen, Ängste und Mythen aus `recherche.md`
+4. höchstens eine Idee aus `ideen-vorrat.md` in diesem Ordner
 
-## Was gepostet wird
+Ist `ideen.md` fast leer und es gibt keine Recherche, vorher kurz `/ig-ideen`
+laufen lassen oder anbieten.
 
-Drei bis fünf Beiträge pro Woche, mindestens zwei davon Reels. Für ein Studio
-mit Behandlungsalltag sind **drei Reels und ein Karussell** ein Takt, der sich
-halten lässt. Reels sind das einzige Format auf Instagram, das verlässlich
-Leute erreicht, die dem Account nicht folgen. Karussells gehen in die Tiefe
-bei denen, die schon folgen. Stories sind täglich und werden getrennt geplant.
+Was in `lernen.md` unter „Mag ich nicht“ steht, kommt nicht in den Plan.
+Was im `log.md` der letzten zwei Wochen steht, auch nicht noch einmal.
 
-Über die Woche mischen, nie zwei vom gleichen Typ hintereinander:
+## Was in die Woche kommt
 
-| Typ | Anteil | Aufgabe |
+**Drei Reels und jeden Tag Stories.** Das ist für ein Studio mit vollem
+Terminkalender ein Takt, der sich halten lässt. Reels sind das Format, das
+Leute erreicht, die dem Studio noch nicht folgen. Stories halten die, die
+schon folgen, und bringen Termine. Karussells nur, wenn die Nutzerin danach
+fragt.
+
+Die drei Reels mischen, nie zweimal derselbe Typ:
+
+| Typ | Aufgabe | Beispiel (dauerhafte Haarentfernung) |
 | --- | --- | --- |
-| **Beleg** | 1 pro Woche | etwas, das passiert ist, mit einer Zahl. Reel. Ein Ergebnis, ein Vorher-Nachher mit Einverständnis, eine Zählung aus dem Studio. |
-| **Erklären** | 1 bis 2 pro Woche | eine Sache, die die Zuschauerin heute umsetzen kann. Reel oder Karussell. Vorbereitung, Pflege danach, was im ersten Termin passiert. |
-| **Haltung** | 1 pro Woche | eine Meinung, die Follower kosten könnte. Reel. „Wer vor dem Termin zupft, verschenkt eine Sitzung.“ |
-| **Geschichte** | 1 alle zwei Wochen | eine Szene mit einem Preis. Reel. Die Kundin, die nach 15 Jahren Wachs kam. |
-| **Angebot** | 1 alle zwei Wochen | was das Studio verkauft, schlicht gesagt, ohne Entschuldigung. Karussell oder Stories. |
+| **Frage** | eine echte Frage der Kundinnen beantworten | „‚Tut Laser mehr weh als Wachs?‘ Die Frage kriege ich jede Woche.“ |
+| **Mythos** | einen Irrtum richtigstellen | „Hör auf, vor dem Termin zu zupfen. Damit verschenkst du die Sitzung.“ |
+| **Ergebnis** | zeigen, was passiert, mit Einverständnis und ehrlich | „Nach Sitzung 4, nicht nach der ersten. So sieht der echte Weg aus.“ |
+| **Gefühl** | eine Alltagsszene, in der sich die Zuschauerin erkennt | „Du sagst das Treffen ab, weil du dich nicht rasiert hast?“ |
+| **Haltung** | eine ehrliche Meinung, die nicht alle teilen | „Nach Sitzung 1 sieht es schlimmer aus. Und das ist gut so.“ |
 
-Für jeden Platz angeben: das Thema, den konkreten Blickwinkel aus dem, was
-diese Woche passiert ist, das Format und die Hook-Formel-Nummer aus
-`../ig-reel/hooks.json`. Kein Thema, ein Blickwinkel. „Haarentfernung“ ist
-kein Plan. „Die Kundin, die nach Sitzung eins Panik bekam, weil mehr Haare da
-waren“ ist ein Reel.
+Jedes Thema muss eine Frage beantworten, die eine Kundin wirklich hat. Was nur
+das Studio interessiert (Gerät kaputt, Urlaub, neue Tapete), gehört höchstens
+in die Story.
 
-`../ig-start/nicht-versprechen.md` gilt für jeden Blickwinkel. Kein Platz im
-Plan verspricht etwas, das das Studio nicht halten kann.
-
-## Wann gepostet wird
-
-Posten, wenn die Kundinnen wach sind und nicht arbeiten. Für Kundinnen eines
-Kosmetikstudios ist das meistens früher Abend, 18 bis 20 Uhr, und
-Sonntagabend. Die Insights des Accounts sagen es genauer, wenn es ein
-Unternehmenskonto ist.
-
-Aber das klar sagen: **Die Uhrzeit zählt viel weniger als die ersten zwei
-Sekunden.** Instagram zeigt ein Reel tagelang weiter, wenn es läuft, und
-begräbt ein gut getimtes, das nicht läuft. Wenn die Nutzerin an Uhrzeiten
-feilt, bevor ihre Hooks funktionieren, poliert sie das Falsche, und das sollte
-man ihr sagen.
-
-## Die Austausch-Runde, die nicht freiwillig ist
-
-20 Minuten am Tag, vor dem Posten, nicht danach. Eine Liste mit 10 Accounts
-bauen:
-
-- **5 Reichweite**: Accounts mit einem Publikum, das die Nutzerin will, wo ein
-  guter Kommentar gesehen wird. Lokale Accounts der Stadt, Friseurinnen,
-  Fotografinnen, Stadtteil-Seiten. Früh kommentieren, bevor 200 andere da
-  sind.
-- **3 Kolleginnen**: gleiche Größe, gleiches Fach, andere Stadt. Die Gruppe,
-  die zurückkommentiert.
-- **2 Kundinnen**: Leute, die wirklich buchen könnten. Wochenlang
-  kommentieren, bevor eine DM kommt, und nie in einem Kommentar werben.
-
-Die Liste an `/ig-comment` übergeben.
+**Stories:** Will die Nutzerin Termine füllen, die Story-Treppe aus
+`../ig-story/story-treppe.md` über die Woche legen. Sonst je Tag ein Satz,
+was gezeigt wird.
 
 ## Ausgabe
 
+Für jeden Reel-Platz: Tag, Uhrzeit, Typ, **vollständiger gesprochener Hook**,
+Hook-Karte (höchstens sechs Wörter), ein Satz, worum es geht, und woher die
+Idee kommt (aus deiner Woche / aus deinem Profil / aus der Recherche).
+
 ```
-WOCHE VOM 13. OKTOBER
+WOCHE VOM 12. OKTOBER
 
-MO  nur Austausch  (20 Min, Liste unten)
-DI  18:30  REEL      BELEG      #3  Das sagt dir keiner   mehr Haare nach Sitzung 1
-MI  nur Stories + Austausch
-DO  18:00  KARUSSELL ERKLÄREN   Caption Aufgabe B         die 5 Dinge vor dem ersten Termin
-FR  18:30  REEL      HALTUNG    #2  Hör auf damit         zupfen vor dem Termin
-SA  -
-SO  19:00  REEL      GESCHICHTE #25 Jemand anderes        die Kundin nach 15 Jahren Wachs
+DI  18:30  REEL  FRAGE
+    Hook:  „‚Tut Laser mehr weh als Wachs?‘ Die Frage kriege ich jede Woche.“
+    Karte: TUT LASER MEHR WEH?
+    Worum: ehrliche Antwort, Wärme und kurzes Zwicken, Vergleich mit Wachs.
+    Woher: Frage 1 aus deinem Profil, auch in 6 von 10 Foren-Threads.
 
-STORIES  jeden Tag 3 bis 5 Bilder, Fragen-Sticker am Donnerstag.
+DO  18:30  REEL  MYTHOS
+    ...
 
-AUSTAUSCH  (5 Reichweite / 3 Kolleginnen / 2 Kundinnen)
-  ...
+SO  19:00  REEL  GEFÜHL
+    ...
 
-Sag „schreib Dienstag“, und ich entwerfe es.
+STORIES  Mo bis Fr Story-Treppe zum Ziel „Termine füllen“ (Details unten).
 ```
 
-Den Plan nach `wochenplan.md` im Arbeitsordner schreiben, damit die anderen
-Skills ihn lesen können. Nichts wird irgendwo geplant oder gepostet. Das ist
-ein Plan, und die Nutzerin führt ihn aus.
+Uhrzeit: früher Abend ist für Kundinnen von Studios meist gut. Ist Zernio
+verbunden (`/ig-verbinden`), die beste Zeit aus den eigenen Statistiken holen
+(Achtung, Zernio rechnet in UTC). Die Uhrzeit zählt viel weniger als die
+ersten zwei Sekunden.
+
+## Bestätigen lassen
+
+Danach fragen, als Auswahl, wenn die Sitzung das kann:
+
+> **Passt der Plan so?**
+> 1. **Ja, passt.** Ich speichere ihn.
+> 2. **Einzelne Plätze ändern.** Sag mir welche, ich mache neue Vorschläge.
+> 3. **Ganz andere Richtung.** Sag mir, was dir fehlt.
+
+Erst nach „ja“ in `wochenplan.md` speichern. Jede Änderung, die etwas über
+ihren Geschmack sagt („keine Preis-Themen“, „mehr Gefühl“), in `lernen.md`.
+
+Danach: „Sag ‚schreib Dienstag‘, dann mache ich mit /ig-reel das Skript.“
+
+## Austausch mit anderen Accounts
+
+Optional, nicht Pflicht: Wer will, kommentiert ein paar Minuten am Tag bei
+Accounts aus der Nachbarschaft (Friseurin, Café, Stadtteil-Seite) oder bei
+Kolleginnen aus anderen Städten. Das macht das Studio sichtbar bei Leuten, die
+es noch nicht kennen. Dass es die eigene Reichweite direkt erhöht, ist nicht
+belegt; es ist Kontaktpflege. Vorschläge schreibt `/ig-comment`.
+
+Nichts wird geplant oder gepostet. Das ist ein Plan, und die Nutzerin führt
+ihn aus, oder plant ihn mit `/ig-posten` in Zernio ein.

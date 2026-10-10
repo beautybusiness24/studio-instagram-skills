@@ -124,3 +124,10 @@ Caption: Aufgabe B, Hook in Zeile 1, eine Aufforderung, 3 Hashtags.
 ```
 
 Nichts wird hochgeladen. Die Nutzerin postet es.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

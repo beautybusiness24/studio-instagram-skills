@@ -17,6 +17,20 @@ Antworten in der ersten Stunde leisten den größten Teil der Arbeit, und auf
 Instagram kann eine Antwort auch ein Reel sein, der am wenigsten genutzte Zug
 auf der Plattform.
 
+## Mit Zernio: Kommentare direkt holen und beantworten
+
+Ist Zernio verbunden (`/ig-verbinden`), muss die Nutzerin nichts einfügen:
+die Kommentare des neuesten Beitrags (oder des genannten) mit
+`comments_list_inbox_comments` bzw. `comments_get_inbox_post_comments` holen,
+sortieren und Antworten entwerfen wie unten. Dann **jede Antwort zeigen und
+einzeln oder als Block bestätigen lassen** („Diese 6 Antworten so senden?“).
+Erst nach Ja mit `comments_reply_to_inbox_post` senden. Ausblenden oder
+löschen nur auf ausdrücklichen Wunsch zu genau diesem Kommentar.
+
+Ohne Zernio: Die Nutzerin fügt die Kommentare ein und kopiert die Antworten
+selbst zurück.
+
+
 Aber der Wert ist nicht bei allen Kommentaren gleich, also sortiert dieser
 Skill, bevor er schreibt.
 
@@ -113,3 +127,10 @@ RAUSCHEN  (2)  übersprungen. Antworten gibt ihnen Reichweite.
 
 Dann die Schranke: Nichts wird gepostet, bis die Nutzerin ja sagt. Sie fügt
 die Antworten ein.
+
+## Lernen
+
+`lernen.md` im Arbeitsordner vor dem Schreiben lesen und beachten. Korrigiert
+die Nutzerin etwas, das über ihren Geschmack sagt („würde ich nie sagen“, „zu
+werblich“, „genau so“), danach eine Zeile mit Datum in `lernen.md` eintragen
+und kurz sagen: „Hab ich mir gemerkt.“

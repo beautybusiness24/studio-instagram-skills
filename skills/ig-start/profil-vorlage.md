@@ -12,6 +12,7 @@ Was hier steht, wird verwendet. Was hier fehlt, wird nicht erfunden.
 - **Stadt und Stadtteil:**
 - **Seit wann gibt es das Studio:**
 - **Wie viele Personen arbeiten dort:**
+- **Wie Kundinnen buchen (Link, WhatsApp, Telefon):**
 
 ## Behandlungen
 
@@ -65,9 +66,12 @@ keine. Wenn dieser Teil leer ist, steht in jedem Entwurf `{{deine Zahl}}`.
 - **Kundinnen, Zahlen oder Namen, die nicht öffentlich werden dürfen:**
 - **Behauptungen, die ich nicht machen darf:** (siehe nicht-versprechen.md, hier nur Zusätzliches)
 
-## Die Aufforderung
+## Aus der Recherche
 
-- **Mein Stichwort für Kommentare (ein Wort, aussprechbar, keine Leerzeichen):**
-- **Was die Person bekommt, die das Stichwort kommentiert:**
-- **Wohin der Link in der Bio führt:**
-- **Wie man einen Termin bucht (Link, WhatsApp, Telefon):**
+Kurzfassung von `recherche.md`, falls die Recherche gelaufen ist. Das sind
+keine Aussagen der Inhaberin, sondern das, was Frauen in Foren und
+Bewertungen über die Behandlung fragen und befürchten.
+
+- **Häufigste Fragen im Netz:**
+- **Häufigste Ängste:**
+- **Mythen, die sich halten:**

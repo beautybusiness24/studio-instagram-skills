@@ -6,7 +6,8 @@ description: >-
   Zeitplan pro Satz, in der Stimme des Studios. Nutzen, wenn die Nutzerin ein
   Reel, ein kurzes Videoskript, einen Hook oder einen Sprechtext will, "mach
   ein Reel über X", "was soll ich in dem Video sagen", oder gleich drehen will
-  und noch keinen ersten Satz hat.
+  und noch keinen ersten Satz hat. Liefert die Caption gleich mit und speichert
+  erst, wenn die Nutzerin zustimmt.
 ---
 
 # ig-reel
@@ -44,12 +45,18 @@ Ergebnis „von Hand bewertet“ schreiben.
    Zuschauerin ist der häufigste Grund, warum Studio-Reels floppen.
 4. `../ig-start/nicht-versprechen.md` lesen. Kein Skript verlässt diesen
    Skill mit „für immer“, „garantiert“, „schmerzfrei“ oder einer Heilung.
-5. Wenn die Idee dünn ist, nicht auffüllen. Eine gebündelte Frage stellen: Was
+5. `lernen.md` lesen, falls vorhanden. Was die Nutzerin dort abgelehnt hat,
+   kommt nicht wieder vor.
+6. `recherche.md`, `ideen.md` und `viral.md` lesen, falls vorhanden. Daraus
+   kommen Fragen, Ängste und Wörter der Kundinnen und die Formeln, die in der
+   Nische gerade laufen.
+7. **Keine Idee?** Sagt die Nutzerin nur „/ig-reel“ oder „mir fällt nichts
+   ein“: die drei besten offenen Ideen aus `ideen.md` anbieten. Gibt es keine,
+   `/ig-ideen` vorschlagen oder direkt kurz recherchieren (siehe dort) und drei
+   Ideen mit Hook zur Auswahl stellen. Nicht ohne Thema anfangen.
+8. Wenn die Idee dünn ist, nicht auffüllen. Eine gebündelte Frage stellen: Was
    ist passiert, wem, und was hat es gekostet oder gebracht? Ein Reel braucht
    eine konkrete wahre Sache. Die holen, bevor geschrieben wird.
-6. Liegt `ideen.md` im Arbeitsordner, lesen. `/ig-viral` schreibt sie, und sie
-   ist der eigene Beleg der Nutzerin, welche Formeln in ihrer Nische gerade
-   laufen. Sie schlägt die Standardwerte in dieser Datei.
 
 ## Die Form
 
@@ -95,24 +102,49 @@ Zeilen ohne etwas Konkretes, keine Schleife. Wiederholen, bis es sauber ist.
 **5. Vermenschlichen.** Das Skript durch `/ig-human` schicken, bevor es gezeigt
 wird. Eine geschriebene Zeile fällt auf, sobald jemand sie laut sagt.
 
-**6. Den Block ausgeben.** Das Skript als Codeblock, der Bild-Text als eigene
-Liste mit Zeiten, dann:
+**6. Die Caption gleich mitschreiben.** Nach den Regeln aus
+`../ig-caption/SKILL.md`: Die erste Zeile (bis 125 Zeichen) sagt, was die
+Zuschauerin tun soll oder worum es geht; Behandlung und Stadt stehen als
+normale Wörter im Text; höchstens fünf Hashtags in einer eigenen letzten
+Zeile; genau eine Aufforderung, die zum Video passt, sonst eine offene Frage.
+Mit `../ig-caption/caption.py` prüfen und durch `/ig-human` schicken.
+
+**7. Die Hook-Karte und das Cover vorschlagen.** Ein Bild aus dem Skript, das
+als Cover taugt (Hände, Gerät, Gesicht mit geschlossenem Mund), und der Text
+der Hook-Karte, höchstens sechs Wörter. Die Karte steht ab Sekunde 0 etwa drei
+Sekunden im Bild und ist gleichzeitig das Cover im Profil.
+
+**8. Den Block ausgeben.** Das Skript als Codeblock, der Bild-Text als Liste mit
+Zeiten, der Drehplan (ein Bild je Zeile), Hook-Karte und Cover, die Caption
+als eigener Codeblock, dann:
 
 ```
 REEL FERTIG
 Hook:        #3 Das sagt dir keiner, Wertung 78 STARK
 Länge:       28,4 s über 8 Beats bei 150 Wörtern/Min
-Im Bild:     6 Karten
-Humanizer:   3 Artefakte entfernt, Mensch-Wert 81 BESTANDEN
-Caption:     als Nächstes /ig-caption
-
-Sag „ja“, dann speichere ich es, oder sag mir, was anders soll.
+Hook-Karte:  MEHR HAARE NACH SITZUNG 1?
+Caption:     Prüfung FERTIG, eine Aufforderung, 3 Hashtags
+Humanizer:   Mensch-Wert 81 BESTANDEN
 ```
 
-**7. Nie posten.** Dieser Skill erzeugt ein Skript. Die Nutzerin dreht es und
-postet es. Bei „ja“: Skript und Bild-Text in `reels/JJJJ-MM-TT-<kurzname>.md`
-speichern und in `log.md` eine Zeile anhängen mit Datum, Hook-Formel und
-erster Zeile, damit `/ig-audit` später eine Geschichte hat.
+**9. Fragen, bevor gespeichert wird.** Immer diese drei Wege anbieten, als
+Auswahl, wenn die Sitzung Auswahlfragen kann:
+
+> **Bist du mit dem Skript zufrieden?**
+> 1. **Ja, übernehmen.** Ich speichere Skript und Caption.
+> 2. **Anpassen.** Sag mir, welche Zeile oder was genau, ich ändere nur das.
+> 3. **Ganz neuer Ansatz.** Anderer Hook, anderer Blickwinkel, ich fange neu an.
+
+Bei 2 nur das Genannte ändern, neu prüfen (`hookscore.py`, `beats.py`,
+`caption.py`) und wieder fragen. Bei 3 eine andere Formel und einen anderen
+Blickwinkel wählen, nicht den alten Text umformulieren. Was die Nutzerin
+ändert, in `lernen.md` eintragen („sagt nie …“, „mag kurze Sätze“).
+
+**10. Erst nach „Ja“ speichern, nie posten.** Skript, Bild-Text, Drehplan,
+Hook-Karte und Caption in `reels/JJJJ-MM-TT-<kurzname>.md`, in `log.md` eine
+Zeile mit Datum, Hook-Formel und erster Zeile, und in `ideen.md` die Idee auf
+`gedreht` setzen. Gepostet wird nicht von diesem Skill; dafür gibt es
+`/ig-posten`.
 
 ## Der Bild-Text ist ein eigenes Skript
 
@@ -126,6 +158,9 @@ Jedes Mal getrennt schreiben. Er wird gelesen, bevor er gehört wird.
   Caption, Knöpfe und Tonleiste drüber.
 - **Den Hook nie dorthin, wo die Caption sitzt.** Das ist unten, und es ist
   verdeckt.
+- **Die Hook-Karte ist auch das Cover.** Ein Bild aus dem Video mit dem
+  Hook-Text darauf, ab Sekunde 0 etwa drei Sekunden eingeblendet. Beim Posten
+  dieses Bild als Cover wählen, dann steht der Hook auch im Profil-Raster.
 - **Untertitel für den Kern einbrennen.** Die meisten schauen zuerst ohne Ton.
   In CapCut geht das mit automatischen Untertiteln.
 
