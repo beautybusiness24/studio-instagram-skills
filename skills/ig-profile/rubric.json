@@ -1,0 +1,79 @@
+{
+  "version": "1.0-de",
+  "total": 100,
+  "note": "Zwölf Punkte, 100 Zähler. Ehrlich bewerten, eine großzügige Note hilft niemandem. Die meisten Studio-Profile landen beim ersten Durchgang zwischen 30 und 45. Die Gewichtung ist Absicht: Namensfeld, erste Bio-Zeile und die drei angepinnten Beiträge zählen mehr als das Foto, weil eine Fremde, die von einem Reel kommt, genau das liest, bevor sie entscheidet, ob sie folgt oder bucht.",
+  "items": [
+    {
+      "id": "namensfeld",
+      "points": 12,
+      "full_marks": "Das Namensfeld (30 Zeichen, die fette Zeile, nicht der Handle) trägt den Namen plus die Behandlung und die Stadt in Wörtern, nach denen gesucht wird: „Lena | Dauerhafte Haarentfernung Berlin“. Instagram durchsucht dieses Feld, und die meisten Studios verschenken es an den Namen allein.",
+      "common_fail": "Nur „Lena's Beauty Lounge“, oder ein Name mit Herz-Emoji."
+    },
+    {
+      "id": "bio_erste_zeile",
+      "points": 12,
+      "full_marks": "Zeile eins sagt, für wen das Studio da ist und was sich für diese Person ändert, mit Ort. Kein Berufstitel, keine Adjektivliste, keine drei Emoji mit Strichen dazwischen.",
+      "common_fail": "„Kosmetikstudio | Wohlfühloase | Beauty & Care ✨“."
+    },
+    {
+      "id": "bio_rest",
+      "points": 8,
+      "full_marks": "Der Rest der 150 Zeichen trägt einen Beleg (Jahre, Anzahl Behandlungen, Bewertungen) oder ein konkretes Angebot, und liest sich als Sätze, nicht als Liste mit Strichen. Stadtteil oder Straße steht drin.",
+      "common_fail": "Stichwort-Suppe, oder leer."
+    },
+    {
+      "id": "angepinnte_drei",
+      "points": 10,
+      "full_marks": "Drei Beiträge oben angepinnt, mit drei verschiedenen Aufgaben: das beste Ergebnis (Vorher/Nachher mit Einverständnis der Kundin), der klarste Ablauf einer Behandlung (was passiert bei Termin eins), und die beste Vorstellung der Person hinter dem Studio. Nicht zufällig die drei mit den meisten Aufrufen.",
+      "common_fail": "Nichts angepinnt, also steht oben, was zuletzt gepostet wurde."
+    },
+    {
+      "id": "link",
+      "points": 8,
+      "full_marks": "Ein Ziel, das zu dem passt, was die Bio gerade versprochen hat, meistens die Terminbuchung. Bis zu fünf Links sind erlaubt, mehr als zwei sind eine Speisekarte, und eine Speisekarte bringt weniger Buchungen als eine Tür.",
+      "common_fail": "Ein Linktree mit elf Einträgen, oder gar kein Link."
+    },
+    {
+      "id": "highlights",
+      "points": 8,
+      "full_marks": "Vier bis sechs Highlights, benannt nach den Fragen, die eine Kundin vor dem ersten Termin stellt: Preise, Ablauf, Ergebnisse, Über mich, Termine. Einheitliche Cover. Nichts, was älter als ein Jahr ist, ganz vorn.",
+      "common_fail": "„Random“, „Life“, „2023“, oder 14 Highlights ohne Reihenfolge."
+    },
+    {
+      "id": "raster_lesbarkeit",
+      "points": 8,
+      "full_marks": "Die ersten neun Cover sind in Daumennagel-Größe lesbar und sagen ohne einen Tipp, worum es im Account geht. Reel-Cover sind ausgewählt, nicht zufällig das erste Bild.",
+      "common_fail": "Neun Cover mit einem Gesicht mitten im Wort und ohne Text."
+    },
+    {
+      "id": "foto",
+      "points": 6,
+      "full_marks": "Das Gesicht der Inhaberin füllt etwa 60 Prozent eines Kreises, der mit ungefähr 40 Pixeln angezeigt wird. Augen sichtbar, aus den letzten zwei Jahren, Hintergrund ruhig. Ein Logo ist in Ordnung, ein Gesicht bringt mehr Follower, weil ein Studio eine Person ist.",
+      "common_fail": "Ganzkörperbild, ein Logo in Schreibschrift, das man nicht lesen kann, oder ein Foto aus dem dunklen Behandlungsraum."
+    },
+    {
+      "id": "handle",
+      "points": 6,
+      "full_marks": "Lesbar, laut aussprechbar, und derselbe wie auf Google und der Website. Keine gestapelten Unterstriche, keine Zahlen als Buchstaben.",
+      "common_fail": "Ein Handle, den nach einmal Hören niemand buchstabieren kann."
+    },
+    {
+      "id": "kategorie_kontakt",
+      "points": 6,
+      "full_marks": "Unternehmenskonto mit der Kategorie Kosmetikstudio oder der konkreten Behandlung, Adresse hinterlegt, Anruf- und E-Mail-Knopf funktionieren. Die E-Mail wird gelesen, nicht die von 2019.",
+      "common_fail": "Privates Konto, also keine Insights, kein Kontakt-Knopf, keine Adresse."
+    },
+    {
+      "id": "aktivitaet",
+      "points": 10,
+      "full_marks": "In den letzten sieben Tagen gepostet und auf Kommentare unter dem neuesten Beitrag geantwortet. Ein Account, der zuletzt im März gepostet hat, liest sich wie geschlossen.",
+      "common_fail": "Fünf Wochen Lücke, oder eine Wand aus unbeantworteten Kommentaren."
+    },
+    {
+      "id": "story_praesenz",
+      "points": 6,
+      "full_marks": "Eine Story ist gerade oben, oder zumindest an den meisten Tagen. Das ist der Unterschied zwischen einem Profil und einer Person.",
+      "common_fail": "Nie ein Ring."
+    }
+  ]
+}

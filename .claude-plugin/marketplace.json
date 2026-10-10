@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "studio-instagram-skills",
+  "description": "Instagram-Skills für Kosmetikstudios, auf Deutsch, von Beauty Business 24",
+  "owner": {
+    "name": "Beauty Business 24",
+    "url": "https://beautybusiness24.com"
+  },
+  "plugins": [
+    {
+      "name": "bb24-instagram",
+      "description": "14 Claude-Skills, die den Instagram-Account eines Kosmetikstudios führen: Studio-Profil im Interview anlegen, Reels aus 26 Hook-Formeln mit Bewertung, Ideen aus der eigenen Nische, Caption-Prüfung, Wochenplan, Profil-Check, Karussell, Story, Kommentare, Antworten, DMs, Wiederverwertung und ein Humanizer.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/beautybusiness24/studio-instagram-skills"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "version": "1.0-de",
+  "note": "26 Hook-Formeln für Reels, auf Deutsch, mit Beispielen aus dem Kosmetikstudio. Ein Reel hat zwei Hooks gleichzeitig, und es sind nicht derselbe Satz: das Erste, was du sagst, und das Erste, was im Bild steht. Der gesprochene Hook hat etwa zwei Sekunden. Der Bild-Hook hat etwa eine, weil er gelesen wird, bevor er gehört wird. Jede Formel hat eine Vorlage, ein ausgefülltes Beispiel, die Bild-Version, wofür sie taugt und wie sie meistens kaputtgeht. Jede Formel hat außerdem ein `match`-Muster, damit ein fremder Hook derselben Formel zugeordnet werden kann. Zuordnung in der Reihenfolge `classify_order`, von speziell nach allgemein, ohne Groß-/Kleinschreibung.",
+  "rules": [
+    "Gesprochene Zeile und Bild-Zeile getrennt schreiben. Im Bild steht die kürzere, direktere Fassung: höchstens sechs Wörter, keine Satzzeichen, die nicht nötig sind.",
+    "Keine Einleitung. Das Video beginnt bei dem Satz, den du sonst in Sekunde sechs sagen würdest.",
+    "Zahl sagen. „Viele“ ist keine Zahl, „so viel Zeit“ auch nicht.",
+    "Das erste Bild ist auch ein Hook. Ein ruhiges Gesicht bei 0:00 ohne Bewegung und ohne Text verschenkt drei Hooks auf einmal.",
+    "Wenn der Hook auch bei jedem anderen Studio der Stadt stehen könnte, ist es nicht dein Hook. Das rein, was nur du sagen kannst.",
+    "Ein Hook verspricht etwas. Liefere es vor der Hälfte des Reels, sonst gibst du die gewonnene Aufmerksamkeit wieder ab.",
+    "Nichts versprechen, was du nicht halten kannst: keine Heilung, keine Garantie, kein „für immer“, kein „100 % schmerzfrei“. Die Liste steht in ig-start/nicht-versprechen.md."
+  ],
+  "hooks": [
+    {
+      "id": 1,
+      "name": "Das Lehrgeld",
+      "template": "{Konkreter Betrag} hat mich {ein Fehler} gekostet.",
+      "example": "4.000 Euro hat mich ein Gerät gekostet, das ich nach drei Monaten nicht mehr benutzt habe.",
+      "on_screen": "4.000 EURO FEHLER",
+      "best_for": "Vertrauen, schnell. Die Videos, in denen du selbst schlecht dastehst, werden zu Ende geschaut.",
+      "trap": "Ein erfundener Preis. „Es hat mich Nerven gekostet“ ist keine Zahl, und das hört jeder.",
+      "match": "\\d[\\d.]*\\s?(?:€|euro)\\s+hat (?:mich|uns)\\b|\\bhat (?:mich|uns) [^.!?]{0,30}\\d[\\d.]*\\s?(?:€|euro)|\\bgekostet\\b[^.!?]{0,20}\\d|\\d[\\d.]*\\s?(?:€|euro)[^.!?]{0,25}\\bgekostet\\b"
+    },
+    {
+      "id": 2,
+      "name": "Hör auf damit",
+      "template": "Hör auf mit {verbreitete Gewohnheit}. Mach stattdessen {Alternative}.",
+      "example": "Hör auf, vor der Haarentfernung zu zupfen. Rasier dich am Abend davor.",
+      "on_screen": "NICHT ZUPFEN",
+      "best_for": "Den Daumen anhalten. Ein Verbot liest sich, bevor man es versteht.",
+      "trap": "Ein Verbot ohne Alternative. Dann ist es Meckern, kein Rat.",
+      "match": "^\\s*(?:hör|hört|hören sie) auf\\b|^\\s*(?:lass|lasst) das\\b|^\\s*(?:nie|niemals) wieder\\b|^\\s*stopp?\\b|^\\s*schluss mit\\b|^\\s*vergiss\\b"
+    },
+    {
+      "id": 3,
+      "name": "Das sagt dir keiner",
+      "template": "Keiner sagt dir, dass {unbequeme Wahrheit über das, was sie wollen}.",
+      "example": "Keiner sagt dir, dass nach der ersten Sitzung erstmal mehr Haare sichtbar sind.",
+      "on_screen": "SAGT DIR KEINER",
+      "best_for": "Fachwissen, das sich nicht wie Werbung anfühlt. Die Zuschauerin fühlt sich eingeweiht.",
+      "trap": "Eine Wahrheit, die jeder kennt. „Keiner sagt dir, dass Sonnenschutz wichtig ist“ sagt jeder.",
+      "match": "\\b(?:keiner|niemand|kaum (?:jemand|einer|eine)) (?:sagt|erzählt|verrät|erklärt)\\b|\\bdas (?:sagt|erzählt|verrät) (?:dir|euch|ihnen) (?:keiner|niemand)\\b|\\bwas (?:dir|euch) (?:keiner|niemand) (?:sagt|erzählt|verrät)\\b"
+    },
+    {
+      "id": 4,
+      "name": "Der Ersatz",
+      "template": "{Das hier} hat {teure Sache} ersetzt, für {Preis}.",
+      "example": "Eine 20-Euro-Pflege hat bei meinen Kundinnen die 90-Euro-Creme ersetzt.",
+      "on_screen": "20 € STATT 90 €",
+      "best_for": "Verdichteter Nutzen in einem Satz. Zwei Zahlen nebeneinander, die Rechnung macht die Zuschauerin selbst.",
+      "trap": "Ein Ersatz, den du selbst nicht benutzt. Fällt beim ersten Nachfragen auf.",
+      "match": "\\bersetzt\\b|\\bstatt\\b[^.!?]{0,20}\\d[\\d.]*\\s?(?:€|euro)|\\d[\\d.]*\\s?(?:€|euro)\\s+statt\\s+\\d"
+    },
+    {
+      "id": 5,
+      "name": "Zeitsprung",
+      "template": "Das hat früher {lange} gedauert. Jetzt {kurz}.",
+      "example": "Eine Beinbehandlung hat früher 90 Minuten gedauert. Jetzt 25.",
+      "on_screen": "90 MIN -> 25 MIN",
+      "best_for": "Fortschritt zeigen, ohne zu prahlen. Die Zahlen reden.",
+      "trap": "Ein Zeitsprung ohne den Hebel. Wenn das Reel nicht sagt, was sich geändert hat, war es nur Angeberei.",
+      "match": "\\b(?:früher|vorher|damals)\\b[^.!?]{0,40}\\b(?:gedauert|gebraucht)\\b|\\b(?:dauert|dauerte|brauchte|braucht)\\b[^.!?]{0,30}\\b(?:jetzt|heute|inzwischen)\\b|\\d+\\s?(?:min|minuten|std|stunden)[^.!?]{0,20}\\b(?:jetzt|heute)\\b"
+    },
+    {
+      "id": 6,
+      "name": "Der Beleg",
+      "template": "Ich habe {Sache} {N Tage/Wochen} gemacht. Das sind die echten Zahlen.",
+      "example": "Ich habe 30 Tage lang jeden Tag eine Story gepostet. Das sind die echten Zahlen.",
+      "on_screen": "30 TAGE, ECHTE ZAHLEN",
+      "best_for": "Zuschauerinnen, die genug Versprechen gehört haben. Der Beleg bleibt bis zum Ende dran.",
+      "trap": "Zahlen, die geschönt sind. Wenn das Ergebnis mies war, ist das Reel trotzdem gut, vielleicht besser.",
+      "match": "\\b(?:echte|echten|wirkliche|wirklichen) zahlen\\b|\\b\\d+ (?:tage|wochen|monate)\\b[^.!?]{0,40}\\b(?:zahlen|ergebnis|ergebnisse|bilanz)\\b|\\bhier (?:ist|sind|kommt) (?:das|die) ergebnis"
+    },
+    {
+      "id": 7,
+      "name": "Falsch, und nicht deine Schuld",
+      "template": "Du machst {Sache} falsch, und es ist nicht deine Schuld. {Die Lösung}.",
+      "example": "Du rasierst dich vor der Behandlung falsch, und es ist nicht deine Schuld. Das sagt dir im Studio keiner.",
+      "on_screen": "FALSCH, NICHT DEINE SCHULD",
+      "best_for": "Ein Fehler, den die Zuschauerin gerade macht, ohne beschämt zu werden.",
+      "trap": "Belehrung. Wenn der zweite Halbsatz fehlt, bleibt nur „du machst es falsch“.",
+      "match": "\\bmachst (?:du |ihr )?[^.!?]{0,30}\\bfalsch\\b|\\bfalsch\\b[^.!?]{0,40}\\bnicht (?:deine|eure|ihre) schuld\\b|\\bnicht (?:deine|eure|ihre) schuld\\b"
+    },
+    {
+      "id": 8,
+      "name": "Von innen",
+      "template": "Ich arbeite seit {N Jahren} {in der Branche}. Das sagen wir nie laut.",
+      "example": "Ich mache seit 11 Jahren dauerhafte Haarentfernung. Das sagen wir Kundinnen nie laut.",
+      "on_screen": "11 JAHRE. NIE LAUT GESAGT.",
+      "best_for": "Autorität ohne Zertifikat. Die Jahre und das Geständnis tragen den Satz.",
+      "trap": "Ein Geheimnis, das keins ist. Dann war der Satz ein Köder.",
+      "match": "\\bseit \\d+ jahren\\b|\\b\\d+ jahre (?:lang )?(?:in der branche|im studio|als)\\b|\\bsagen wir (?:nie|nicht|keiner)\\b|\\b(?:nie|niemals) laut\\b"
+    },
+    {
+      "id": 9,
+      "name": "Nimm dir das",
+      "template": "Nimm dir {Vorlage}. Ich habe {Zeit} gebraucht, bis sie saß.",
+      "example": "Nimm dir meinen Vorbereitungs-Zettel für die erste Sitzung. Ich habe zwei Jahre gebraucht, bis er saß.",
+      "on_screen": "ZETTEL KOPIEREN",
+      "best_for": "Speichern und Kommentare. Ein konkretes Ding, das man mitnehmen kann.",
+      "trap": "Eine Vorlage, die gar nicht existiert. Wer „VORLAGE“ kommentiert, wartet dann umsonst.",
+      "match": "^\\s*(?:nimm|nehmt|kopier|kopiert|schnapp dir|speicher dir|klau dir|hol dir)\\b|\\bzum (?:kopieren|mitnehmen|abspeichern)\\b"
+    },
+    {
+      "id": 10,
+      "name": "Wenn du, dann schau",
+      "template": "Wenn du {konkrete Situation}, dann löst das hier {kurze Zeit} das Problem.",
+      "example": "Wenn du nach dem Epilieren immer eingewachsene Haare hast, dann löst das hier in 40 Sekunden das Problem.",
+      "on_screen": "EINGEWACHSENE HAARE? 40 SEK",
+      "best_for": "Eine klar benannte Zuschauerin. Wer sich erkennt, bleibt.",
+      "trap": "Eine Situation, die zu breit ist. „Wenn du Haut hast“ ist keine Situation.",
+      "match": "^\\s*(?:wenn|falls) (?:du|ihr|sie)\\b|\\bdann (?:schau|guck|bleib|ist das hier|löst)\\b"
+    },
+    {
+      "id": 11,
+      "name": "Nummeriert mit Liebling",
+      "template": "{N} {Dinge}, die {Ergebnis}. Nummer {k} nutzt kaum jemand.",
+      "example": "3 Fehler vor der ersten Haarentfernung. Nummer 2 macht fast jede.",
+      "on_screen": "3 FEHLER. NR. 2 MACHT JEDE.",
+      "best_for": "Listen, die trotzdem bis zum Ende geschaut werden, weil Nummer k versprochen ist.",
+      "trap": "Nummer k ist nicht besser als die anderen. Dann war es ein Trick.",
+      "match": "^\\s*\\d+ [^.!?]{2,40}\\b(?:nummer|nr\\.?|punkt) \\d|\\bnummer \\d+ (?:macht|nutzt|kennt|vergisst|übersieht)\\b"
+    },
+    {
+      "id": 12,
+      "name": "Der Einwand",
+      "template": "„{Einwand, so wie er wirklich gesagt wird}.“ Okay. Hier ist die Version, die trotzdem geht.",
+      "example": "„Ich hab keine Zeit für acht Sitzungen.“ Okay. Hier ist, wie das bei meinen Kundinnen mit Vollzeitjob läuft.",
+      "on_screen": "\"KEINE ZEIT FÜR 8 SITZUNGEN\"",
+      "best_for": "Den häufigsten Grund, warum jemand nicht bucht, direkt ansprechen. Zuschauerinnen hören ihren eigenen Satz.",
+      "trap": "Ein Einwand, den so keiner sagt. Erfundene Kundenzitate klingen immer erfunden.",
+      "match": "^\\s*[„\"'][^\"“”]{6,80}[\"“”][\\s.]*(?:okay|ok|gut|verstehe|stimmt|kann ich verstehen|fair)\\b|\\bhöre ich (?:jede woche|ständig|oft|immer)\\b"
+    },
+    {
+      "id": 13,
+      "name": "Vorher und Nachher im Bild",
+      "template": "{Zeig das Alte}. {Zeig das Neue}. {Ein Satz zum Hebel}.",
+      "example": "Links nach der ersten Sitzung. Rechts nach der vierten. Das dazwischen war ein Rasierer und Geduld.",
+      "on_screen": "SITZUNG 1 -> SITZUNG 4",
+      "best_for": "Ergebnisse, die man sehen kann. Das Bild ist der Hook, der Satz erklärt nur.",
+      "trap": "Ein Nachher, das nicht echt ist, oder ein Vorher, das mit fremden Fotos gebaut wurde. Nur eigene Kundinnen, nur mit Einverständnis.",
+      "match": "\\b(?:vorher|davor)\\b[^!?]{0,40}\\b(?:nachher|danach)\\b|\\blinks\\b[^!?]{0,40}\\brechts\\b|\\bsitzung \\d+[^!?]{0,25}\\bsitzung \\d+|\\bnach der (?:ersten|zweiten|dritten)\\b[^!?]{0,40}\\bnach der (?:zweiten|dritten|vierten|fünften|sechsten)\\b"
+    },
+    {
+      "id": 14,
+      "name": "Der Zuruf",
+      "template": "{Konkrete Gruppe}, das hier habt ihr bisher ignoriert.",
+      "example": "Alle mit dunkler Haut, die schon mal gehört haben, Laser geht bei euch nicht: Das hier ignoriert ihr bisher.",
+      "on_screen": "DUNKLE HAUT? SCHAU HIN",
+      "best_for": "Eine Gruppe, die sonst übersehen wird, direkt ansprechen.",
+      "trap": "Eine Gruppe, die alle meint. „Alle Frauen“ ist keine Gruppe.",
+      "match": "^\\s*(?:alle|an alle|für alle|liebe|hey)\\b[^.!?]{0,40}\\b(?:das hier|ihr|euch)\\b|\\bdas hier (?:habt ihr|hast du|ignorierst du|ignoriert ihr)\\b"
+    },
+    {
+      "id": 15,
+      "name": "Die Flop-Serie",
+      "template": "Meine ersten {N} {Versuche} haben nichts gebracht. Beim {N+1}. hat sich das geändert.",
+      "example": "Meine ersten 40 Reels haben nichts gebracht. Beim 41. hat sich etwas geändert.",
+      "on_screen": "40 FLOPS, DANN DAS",
+      "best_for": "Nahbarkeit. Jede, die gerade scheitert, schaut weiter.",
+      "trap": "Keine echte Änderung beim N+1. Dann endet das Reel mit „ich hab einfach weitergemacht“, und das ist kein Hebel.",
+      "match": "\\bmeine ersten \\d+\\b|\\bersten \\d+ [^.!?]{0,30}\\b(?:nichts|null|gar nichts|keine)\\b|\\bbeim \\d+\\.\\s"
+    },
+    {
+      "id": 16,
+      "name": "Die Original-Frage",
+      "template": "„{Frage, genau so wie sie gestellt wurde}“, die kriege ich jede Woche.",
+      "example": "„Tut Laser mehr weh als Wachs?“ Die Frage kriege ich jede Woche.",
+      "on_screen": "\"TUT LASER MEHR WEH?\"",
+      "best_for": "Fragen aus Kommentaren, DMs und dem Studio. Der Hook ist schon geschrieben, von der Kundin.",
+      "trap": "Eine Frage, die du dir ausgedacht hast. Die echten sind immer schräger und besser.",
+      "match": "^\\s*[„\"'][^\"“”]{6,80}\\?[\"“”]|\\b(?:die frage|das) (?:kriege|bekomme|höre|lese) ich (?:jede woche|jeden tag|ständig|dauernd|immer wieder)\\b|\\bfragt mich (?:jede|jeder|jede zweite)\\b"
+    },
+    {
+      "id": 17,
+      "name": "Direkter Vergleich",
+      "template": "{A} gegen {B}. Ich habe beides {Zeit} gemacht, und es war nicht knapp.",
+      "example": "Wachs gegen Laser. Ich habe beides fünf Jahre lang angeboten, und es war nicht knapp.",
+      "on_screen": "WACHS VS. LASER",
+      "best_for": "Entscheidungen, vor denen die Zuschauerin gerade steht.",
+      "trap": "Ein Vergleich, bei dem du das eine nie selbst gemacht hast. Dann ist es Meinung, kein Vergleich.",
+      "match": "\\b\\w+ (?:gegen|vs\\.?|versus|oder) \\w+[.!?]|\\bbeides (?:gemacht|getestet|probiert|angeboten|ausprobiert)\\b|\\b(?:war|ist) nicht knapp\\b"
+    },
+    {
+      "id": 18,
+      "name": "Mitten in der Handlung",
+      "template": "{Beginn mitten in der Arbeit, schon dabei.} Schau, was das macht.",
+      "example": "[Handschuh an, Gerät läuft] Schau, was die Haut direkt danach macht.",
+      "on_screen": "SCHAU HIN",
+      "best_for": "Behandlungen mit sichtbarem Vorgang. Die Hände arbeiten, der Satz ist nur Begleitung.",
+      "trap": "Der Vorgang ist nicht zu sehen, nur das Gesicht. Dann war der erste Frame leer.",
+      "match": "^\\s*(?:\\[[^\\]]*\\]\\s*)?(?:schau|guck|seht|sieh|pass auf|achte)\\b[^.!?]{0,30}\\b(?:was|wie|mal)\\b|\\bschau,? was [^.!?]{0,40}\\b(?:macht|passiert)\\b"
+    },
+    {
+      "id": 19,
+      "name": "Die Frist",
+      "template": "{Sache} ändert sich am {Datum}. Mach {Handlung} vorher.",
+      "example": "Ab Mai ist die Sonne zu stark für Laser. Wer bis Mai durch sein will, muss im Januar anfangen.",
+      "on_screen": "VOR MAI STARTEN",
+      "best_for": "Saisonales. Haarentfernung, Sommerhaut, Weihnachtsgutscheine.",
+      "trap": "Eine künstliche Frist. „Nur noch heute“ ohne Grund wird nach zweimal nicht mehr geglaubt.",
+      "match": "\\b(?:ab|bis|vor|nach) (?:januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|sommer|winter|frühling|herbst|weihnachten|ostern)\\b|\\bändert sich (?:am|ab)\\b|\\bnoch bis\\b"
+    },
+    {
+      "id": 20,
+      "name": "Du brauchst das nicht",
+      "template": "Du brauchst {das, was alle sagen} nicht.",
+      "example": "Du brauchst keine zehn Produkte für deine Haut. Du brauchst zwei, und die richtige Reihenfolge.",
+      "on_screen": "KEINE 10 PRODUKTE",
+      "best_for": "Erleichterung. Die Zuschauerin darf etwas weglassen.",
+      "trap": "Das Weglassen ohne Ersatz. Dann ist es nur eine Behauptung.",
+      "match": "\\bbrauchst (?:du )?(?:kein|keine|keinen|nicht|gar nicht)\\b|\\bdu brauchst (?:das|den|die) [^.!?]{0,30}\\bnicht\\b|\\bmusst (?:du )?(?:nicht|kein|keine)\\b"
+    },
+    {
+      "id": 21,
+      "name": "Mitten im Satz",
+      "template": "{...und da hat sich {die Wendung}.}",
+      "example": "...und dann sagt sie: Ich war vorher bei drei anderen Studios.",
+      "on_screen": "...BEI DREI ANDEREN STUDIOS",
+      "best_for": "Geschichten. Der Zuschauer kommt zu spät und will wissen, was davor war.",
+      "trap": "Ein Satzanfang ohne Geschichte dahinter. Nach drei Sekunden muss klar sein, worum es geht.",
+      "match": "^\\s*(?:\\.\\.\\.|…)\\s*(?:und|dann|da|also|aber)\\b|^\\s*(?:und|dann) (?:dann|da|sagt|hat|war)\\b"
+    },
+    {
+      "id": 22,
+      "name": "Umgedrehter Spruch",
+      "template": "{Bekannter Satz, umgedreht.}",
+      "example": "Wer schön sein will, muss nicht leiden. Wer leidet, war im falschen Studio.",
+      "on_screen": "SCHÖN OHNE LEIDEN",
+      "best_for": "Haltung. Ein Satz, den man schon kennt, mit einem neuen Ende.",
+      "trap": "Umdrehen ohne Grund. Wenn das Reel die Umkehrung nicht belegt, war es nur ein Wortspiel.",
+      "match": "\\bwer (?:schön|schön sein will)\\b|\\b(?:muss|musst) nicht leiden\\b|\\bweniger ist (?:nicht )?mehr\\b|\\b(?:geld|zeit) (?:ist|ist nicht) (?:alles|das problem)\\b|\\bnicht umgekehrt\\b|\\bgenau andersrum\\b|\\bandersherum\\b"
+    },
+    {
+      "id": 23,
+      "name": "Die Zahl",
+      "template": "{N} % der {Gruppe} {überraschende Tatsache}.",
+      "example": "8 von 10 Kundinnen kommen zur ersten Sitzung mit gezupften Haaren. Das ist das Problem.",
+      "on_screen": "8 VON 10 MACHEN DAS",
+      "best_for": "Ein Fakt aus dem eigenen Studio, der neugierig macht.",
+      "trap": "Eine Zahl aus dem Internet ohne Quelle, oder eine erfundene. Eigene Zählung ist besser als fremde Statistik.",
+      "match": "^\\s*\\d+\\s?(?:%|prozent)\\b|\\b\\d+ von \\d+\\b|\\bjede (?:zweite|dritte|vierte|fünfte)\\b|\\bjeder (?:zweite|dritte|vierte|fünfte)\\b"
+    },
+    {
+      "id": 24,
+      "name": "Das Neue",
+      "template": "Das hier ist {das Neue}.",
+      "example": "Das hier ist das neue Gerät, auf das ich zwei Jahre gespart habe.",
+      "on_screen": "NEU IM STUDIO",
+      "best_for": "Ankündigungen, bei denen die Neugier schon da ist. Nur für echte Neuigkeiten.",
+      "trap": "„Neu“ für etwas, das keiner vermisst hat. Dann ist es ein Werbeplakat.",
+      "match": "^\\s*das (?:hier )?ist (?:das|der|die|mein|meine|unser|unsere) neue[rs]?\\b|\\bneu im studio\\b|\\bab (?:heute|morgen|montag|nächster woche|sofort) (?:gibt es|gibt's|haben wir|bieten wir)\\b"
+    },
+    {
+      "id": 25,
+      "name": "Jemand anderes",
+      "template": "Es gab eine {Person}, die {Ergebnis} in {Zeit}.",
+      "example": "Eine Kundin ist nach 15 Jahren Wachs zu mir gekommen. Nach vier Sitzungen hat sie den Rasierer weggeworfen.",
+      "on_screen": "15 JAHRE WACHS. 4 SITZUNGEN.",
+      "best_for": "Beweise, ohne selbst der Held zu sein. Mit Einverständnis, ohne Namen, wenn nicht ausdrücklich erlaubt.",
+      "trap": "Eine Kundin, die es nicht gibt. Das ist kein Hook, das ist ein Problem.",
+      "match": "\\b(?:eine|ein|meine) (?:kundin|kunde|patientin|frau|mann|mitarbeiterin)\\b[^.!?]{0,60}\\b(?:nach|in|innerhalb von) \\d+ (?:sitzungen|wochen|monaten|tagen|jahren)\\b|\\bes gab (?:eine|einen|mal eine)\\b|\\b(?:kundin|kunde) (?:kam|ist gekommen|hat)\\b"
+    },
+    {
+      "id": 26,
+      "name": "Der Superlativ",
+      "template": "Das {schnellste / größte / einzige} {Ding} ist {die Antwort}.",
+      "example": "Der einzige Grund, warum Laser bei dir nicht gewirkt hat, ist die Zeit zwischen den Sitzungen.",
+      "on_screen": "DER EINZIGE GRUND",
+      "best_for": "Klarheit. Ein Superlativ verspricht, dass die Suche vorbei ist.",
+      "trap": "Ein Superlativ, den das Reel nicht hält. Und: keine Superlative über Wirkung oder Sicherheit, siehe nicht-versprechen.md.",
+      "match": "\\b(?:der|die|das) (?:einzige|einzigen|schnellste|schnellsten|größte|größten|wichtigste|wichtigsten|beste|besten|billigste|teuerste|häufigste|häufigsten) (?:grund|fehler|weg|sache|frage|trick|methode|behandlung|art|regel)\\b"
+    }
+  ],
+  "classify_order": [
+    1,
+    23,
+    5,
+    4,
+    3,
+    15,
+    20,
+    7,
+    9,
+    26,
+    25,
+    24,
+    18,
+    17,
+    8,
+    6,
+    16,
+    12,
+    10,
+    2,
+    13,
+    19,
+    21,
+    22,
+    11,
+    14
+  ]
+}
