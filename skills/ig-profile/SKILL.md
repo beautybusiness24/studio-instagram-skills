@@ -57,8 +57,8 @@ einmal umschreiben, die Nutzerin muss jedes davon wirklich ändern gehen.
 **1. Das Namensfeld (30 Zeichen).** Die fette Zeile unter dem Foto, nicht der
 Handle. Dieses Feld durchsucht Instagram, und die meisten Studios schreiben
 einen Namen hinein und sonst nichts. Form, die funktioniert:
-`{Vorname} | {Behandlung} {Stadt}`. Beispiel: „Lena | Dauerhafte
-Haarentfernung Berlin“. Drei Varianten geben.
+`{Vorname} | {Behandlung} {Stadt}`. Beispiel: „Lena | Haarentfernung Berlin“ (28 Zeichen; „Dauerhafte
+Haarentfernung“ passt nicht mehr hinein). Drei Varianten geben, jede nachzählen.
 
 **2. Bio Zeile eins.** Für wen das Studio da ist und was sich ändert, mit Ort.
 Kein Berufstitel, keine Adjektive, keine Liste mit Strichen. Der Rest der 150

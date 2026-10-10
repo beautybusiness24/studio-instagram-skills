@@ -88,6 +88,15 @@ gelesen wird. Ist kein Werkzeug zum Rendern da, die Folientexte so ausgeben,
 dass die Nutzerin sie in Canva oder CapCut einsetzen kann, mit der Angabe
 „Folie 1: Überschrift / Text“.
 
+## Nach dem Rendern prüfen
+
+Den Kontaktbogen oder jede Folie einmal ansehen, bevor sie der Nutzerin
+gezeigt wird: Ist jeder Text lesbar, auch auf dunklen Folien? Stimmen
+Nummern und Handle? Eine Folie mit unsichtbarem Text ist schlimmer als keine.
+Fällt etwas auf, HTML korrigieren und neu rendern. Die Folientexte
+zusätzlich in die Markdown-Datei in `beitraege/` schreiben, damit sie auch
+ohne Bilder weiterverwendet werden können.
+
 ## Ausgabe
 
 Zuerst der Text Folie für Folie, als nummerierte Liste, die die Nutzerin in

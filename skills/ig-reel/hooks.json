@@ -209,7 +209,7 @@
       "on_screen": "KEINE 10 PRODUKTE",
       "best_for": "Erleichterung. Die Zuschauerin darf etwas weglassen.",
       "trap": "Das Weglassen ohne Ersatz. Dann ist es nur eine Behauptung.",
-      "match": "\\bbrauchst (?:du )?(?:kein|keine|keinen|nicht|gar nicht)\\b|\\bdu brauchst (?:das|den|die) [^.!?]{0,30}\\bnicht\\b|\\bmusst (?:du )?(?:nicht|kein|keine)\\b"
+      "match": "\\bbrauchst (?:du )?(?:[^.!?]{0,25}\\b)?(?:kein|keine|keinen|nicht|gar nicht)\\b|\\bdu brauchst (?:das|den|die) [^.!?]{0,30}\\bnicht\\b|\\bmusst (?:du )?(?:nicht|kein|keine)\\b"
     },
     {
       "id": 21,
@@ -249,7 +249,7 @@
       "on_screen": "NEU IM STUDIO",
       "best_for": "Ankündigungen, bei denen die Neugier schon da ist. Nur für echte Neuigkeiten.",
       "trap": "„Neu“ für etwas, das keiner vermisst hat. Dann ist es ein Werbeplakat.",
-      "match": "^\\s*das (?:hier )?ist (?:das|der|die|mein|meine|unser|unsere) neue[rs]?\\b|\\bneu im studio\\b|\\bab (?:heute|morgen|montag|nächster woche|sofort) (?:gibt es|gibt's|haben wir|bieten wir)\\b"
+      "match": "^\\s*(?:das (?:hier )?ist (?:das|der|die|mein|meine|unser|unsere) neue[rs]?\\b|(?:unser|unsere|mein|meine|das) neue[rs]? \\w+ (?:ist|sind) (?:da|endlich da|angekommen)\\b)|\\bneu im studio\\b|\\bab (?:heute|morgen|montag|nächster woche|sofort) (?:gibt es|gibt's|haben wir|bieten wir)\\b"
     },
     {
       "id": 25,
@@ -287,9 +287,9 @@
     24,
     18,
     17,
+    16,
     8,
     6,
-    16,
     12,
     10,
     2,
