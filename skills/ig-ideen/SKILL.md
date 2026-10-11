@@ -52,7 +52,40 @@ Gibt es keine Websuche, sagen, dass die Ideen dann nur aus dem Profil kommen,
 und mit den Kundinnen-Fragen, Haltungen und Befürchtungen aus
 `studio-profil.md` arbeiten. Ergänzend `../ig-plan/ideen-vorrat.md`.
 
+## Bündeln und zählen
+
+Einzelne Foren-Beiträge sind keine Ideen. Ein Reel soll die typische Frau
+treffen, nicht die eine Person aus dem Forum. Deshalb vor dem Schreiben:
+
+1. Alle gefundenen Aussagen (Fragen, Ängste, Mythen, Szenen) zu **Themen**
+   zusammenfassen, zum Beispiel „Haare kommen nach Sitzung 1 oder 2 scheinbar
+   zurück“, „Angst vor Schmerz“, „Sonne und Urlaub“.
+2. Pro Thema zählen, **in wie vielen unabhängigen Quellen** es vorkommt
+   (verschiedene Threads, Bewertungen, Personen). Mehrere Antworten im selben
+   Thread zählen als eine Quelle.
+3. Pro Thema die **häufigsten Wörter** der Frauen festhalten („Stoppeln“, „tut
+   das weh“, „wirklich für immer“) und ein bis zwei O-Töne als Beleg.
+4. Als Tabelle in `recherche.md`, sortiert nach Häufigkeit:
+   Thema · Anzahl Quellen · typische Wörter · Beispiel-O-Ton mit Link.
+
 ## Aus Recherche werden Ideen
+
+**Regeln:**
+- **Nur Themen mit mindestens 3 unabhängigen Quellen werden Ideen.** Die
+  Reihenfolge richtet sich zuerst nach Häufigkeit, dann nach Wertung.
+- **Einzelfälle** (nur eine oder zwei Quellen) sind keine eigene Idee. Sie
+  dürfen im Kern eines Reels als Beispiel vorkommen („Eine Frau schrieb im
+  Forum …“). Höchstens 2 der 15 Ideen dürfen aus einem Einzelfall kommen, und
+  nur wenn er eine Situation beschreibt, die viele kennen; dann mit
+  „Einzelfall“ markieren.
+- **Kein Hook ohne Formel.** Zuerst die passende Formel aus
+  `../ig-reel/hooks.json` wählen, ihre `template` mit den häufigsten Wörtern
+  des Themas füllen, dann gegen `../ig-reel/hook-regeln.md` prüfen (Gefühl
+  oder Szene, Gegenstand vorne, keine Technik).
+- **Der Hook spricht die typische Frau an.** Keine Details, die nur auf einen
+  Beitrag passen (die Sitzungszahl einer einzelnen Person, eine Körperstelle
+  aus einem einzigen Thread), außer sie kommen in mehreren Quellen vor.
+
 
 15 Ideen, gemischt nach Typ:
 
@@ -70,7 +103,9 @@ Für jede Idee:
   emotional, der Gegenstand (Laser, Haare, Sitzung, Haut) steht vorne,
   „du“, keine Begrüßung
 - **Formel-Nummer**
-- **warum sie trägt**: der O-Ton oder die Quelle dahinter
+- **wie oft**: Anzahl unabhängiger Quellen und die typischen Wörter
+- **Formel-Vorlage**, aus der der Hook gebaut wurde
+- **Beleg**: ein O-Ton mit Link
 - **Wertung** aus `../ig-reel/hookscore.py` (alle 15 Hooks in eine Datei, ein
   Durchlauf)
 
@@ -87,7 +122,8 @@ IDEEN  ·  dauerhafte Haarentfernung  ·  15 Ideen aus 14 Quellen
 
 TOP 5
   86  #16  „‚Tut das weh?‘ Die Frage kriege ich jede Woche.“
-           Frage Nr. 1 in fast jedem Forum. Ehrliche Antwort: Wärme, kurzes Zwicken.
+           11 Quellen · Vorlage: „‚{Frage}‘, die kriege ich jede Woche.“
+           typische Wörter: „tut das weh“, „Angst vor den Schmerzen“
   ...
 
 WEITERE 10

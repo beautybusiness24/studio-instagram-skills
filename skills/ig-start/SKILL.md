@@ -141,7 +141,9 @@ Fachquellen (Fachgesellschaft, Verbraucherzentrale, Bundesamt). Ergebnis in
 5. die Wörter der Kundinnen gegenüber den Fachwörtern
 
 Nur Belegtes, mit Link. Keine Zahlen aus der Recherche als Zahlen des Studios
-ausgeben. Danach im Abschnitt „Aus der Recherche“ von `studio-profil.md` je
+ausgeben. Fragen und Ängste nach Themen bündeln und je Thema angeben, in wie
+vielen unabhängigen Quellen es vorkommt, sortiert nach Häufigkeit. Was nur
+einmal vorkommt, ist ein Einzelfall und steht am Ende. Danach im Abschnitt „Aus der Recherche“ von `studio-profil.md` je
 drei Stichpunkte eintragen. Die eigenen Angaben der Nutzerin bleiben, wie sie
 sind; die Recherche steht getrennt daneben.
 
