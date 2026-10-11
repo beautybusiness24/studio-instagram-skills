@@ -82,6 +82,9 @@ treffen, nicht die eine Person aus dem Forum. Deshalb vor dem Schreiben:
   `../ig-reel/hooks.json` wählen, ihre `template` mit den häufigsten Wörtern
   des Themas füllen, dann gegen `../ig-reel/hook-regeln.md` prüfen (Gefühl
   oder Szene, Gegenstand vorne, keine Technik).
+- **Keine Ursachen-Diagnose im Hook.** Nicht „deine Hormone“, „deine
+  Schilddrüse“ oder „du hast PCOS“. Ein Studio darf sagen, dass es bei
+  bestimmten Ursachen eine Ärztin braucht, aber nicht, welche Ursache vorliegt.
 - **Der Hook spricht die typische Frau an.** Keine Details, die nur auf einen
   Beitrag passen (die Sitzungszahl einer einzelnen Person, eine Körperstelle
   aus einem einzigen Thread), außer sie kommen in mehreren Quellen vor.
@@ -115,7 +118,10 @@ Die Frage darf zitiert werden, das Versprechen nicht.
 
 ## Ausgabe
 
-Die besten fünf zuerst, dann der Rest kurz:
+Die **fünf häufigsten Themen** zuerst (meiste Quellen), innerhalb gleicher
+Häufigkeit nach Wertung, dann der Rest kurz. Nicht nach Wertung allein
+sortieren: Ein Hook mit 87 Punkten zu einem Thema aus 3 Quellen gehört hinter
+einen mit 80 Punkten zu einem Thema aus 10 Quellen.
 
 ```
 IDEEN  ·  dauerhafte Haarentfernung  ·  15 Ideen aus 14 Quellen
